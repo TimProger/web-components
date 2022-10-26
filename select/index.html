@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select | WEB-COMPONENTS</title>
+    <script src="./script.js" type="module"></script>
+    <style>
+        :root {
+            --select-width: 200px
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgb(78, 79, 105);
+        }
+
+        .new-select {
+            height: auto;
+            background: rgb(229, 229, 247);
+            color: rgb(78, 79, 105);
+            border-radius: 5px;
+        }
+
+        .new-select-selected {
+            width: var(--select-width);
+            cursor: pointer;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .new-select-options {
+            width: var(--select-width);
+            display: none;
+            flex-direction: column;
+            gap: 2px;
+            position: absolute;
+        }
+
+        .open {
+            display: flex;
+        }
+
+        .new-select-options-option {
+            width: var(--select-width);
+            background: rgb(229, 229, 247);
+            color: rgb(78, 79, 105);
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .new-select-options-option:hover {
+            background: rgb(165, 165, 202);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <new-select values="ПН ВТ СР ЧТ ПТ СБ ВС"></new-select>
+</body>
+
+</html>
