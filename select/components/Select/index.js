@@ -1,4 +1,4 @@
-export default class Range extends HTMLElement {
+export default class Select extends HTMLElement {
     constructor(){
         super()
         this.days = []
