@@ -10,7 +10,6 @@ export default class Select extends HTMLElement {
     }
 
     connectedCallback() {
-
         this.days = this.getAttribute("values").split(' ').map((el, index)=>{
             console.log(el, index)
             return {
